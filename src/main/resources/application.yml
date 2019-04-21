@@ -1,0 +1,8 @@
+server:
+  port: ${port:8080}
+shipping-address-service:
+ ribbon:
+  eureka:
+   enabled: true
+  ServerListRefreshInterval: 1000
+  NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
